@@ -1,0 +1,7 @@
+# Notes on total_mut_chi_squared.R comparison #
+
+From the mosiac plot it doesn't look like there are any differences between the two groups...
+
+See http://www.sthda.com/english/wiki/chi-square-test-of-independence-in-r for good tips
+
+Came up with an error, am teseting with all mutations now as might not be enough data.

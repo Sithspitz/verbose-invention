@@ -1,0 +1,5 @@
+"as.character(kras_test_fisher)"
+"1" "0.0414992926131764"
+"2" "two.sided"
+"3" "Fisher's Exact Test for Count Data"
+"4" "kras_test"

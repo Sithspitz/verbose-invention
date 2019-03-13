@@ -55,5 +55,10 @@ Decided that as the expected frequencies for the STK11 MT and KRAS/STK11 MT grou
 
 Below are the results of the Fisher's Test for each group:
 3: Without MT vs with STK11 MT ('stk11_mut.csv')
-    FISHER'S COMPARISON
-
+    FISHER'S COMPARISON NS
+    
+4: Without MT vs with KRAS MT ('kras_mut.csv')
+    FISHER'S COMPARISON SIG
+    
+5: With MT vs with double KRAS/STK11 MT ('kras_stk11_mut.csv')
+    FISHER'S COMPARISON SIG

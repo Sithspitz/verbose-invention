@@ -20,7 +20,7 @@ subtypes_plot <- mosaicplot(subtypes_table, shade = T, las =2,
                             main = "Immune Subtypes")
 
 # All vs WT chi squared
-subtypes_chi <- chisq.test(all_subtypes)
+subtypes_chi <- chisq.test(all_subtypes, correct = T)
 subtypes_chi
 subtypes_chi <- as.data.frame(as.character(subtypes_chi))
 write.table(subtypes_chi, file = "./Output/all_data_chi_sq.txt")
@@ -30,7 +30,7 @@ write.table(subtypes_chi, file = "./Output/all_data_chi_sq.txt")
 # Import, Compare, Print, Export
 total_subtypes <- read.csv("~/Documents/R/R Local Projects/verbose-invention/data_input/total_mut.csv",
                          row.names=1)
-total_subtypes_chi <- chisq.test(total_subtypes)
+total_subtypes_chi <- chisq.test(total_subtypes, correct = T)
 total_subtypes_chi
 total_subtypes_chi <- as.data.frame(as.character(total_subtypes_chi))
 write.table(total_subtypes_chi, file = "./Output/total_subtypes_chi_sq.txt")
@@ -40,7 +40,7 @@ write.table(total_subtypes_chi, file = "./Output/total_subtypes_chi_sq.txt")
 # Import, Compare, Print, Export
 stk11_test <- read.csv("~/Documents/R/R Local Projects/verbose-invention/data_input/stk11_mut.csv",
                            row.names=1)
-stk11_test_chi <- chisq.test(stk11_test)
+stk11_test_chi <- chisq.test(stk11_test, correct = T)
 stk11_test_chi
 stk11_test_chi <- as.data.frame(as.character(stk11_test_chi))
 write.table(stk11_test_chi, file = "./Output/stk11_mut_chi_sq.txt")
@@ -50,7 +50,7 @@ write.table(stk11_test_chi, file = "./Output/stk11_mut_chi_sq.txt")
 # Import, Compare, Print, Export
 kras_test <- read.csv("~/Documents/R/R Local Projects/verbose-invention/data_input/kras_mut.csv",
                        row.names=1)
-kras_test_chi <- chisq.test(kras_test)
+kras_test_chi <- chisq.test(kras_test, correct = T)
 kras_test_chi
 kras_test_chi <- as.data.frame(as.character(kras_test_chi))
 write.table(kras_test_chi, file = "./Output/kras_mut_chi_sq.txt")
@@ -60,7 +60,7 @@ write.table(kras_test_chi, file = "./Output/kras_mut_chi_sq.txt")
 # Import, Compare, Print, Export
 kras_stk11_test <- read.csv("~/Documents/R/R Local Projects/verbose-invention/data_input/kras_stk11_mut.csv",
                       row.names=1)
-kras_stk11_test_chi <- chisq.test(kras_stk11_test)
+kras_stk11_test_chi <- chisq.test(kras_stk11_test, correct = T)
 kras_stk11_test_chi
 kras_stk11_test_chi <- as.data.frame(as.character(kras_stk11_test_chi))
 write.table(kras_stk11_test_chi, file = "./Output/kras_stk11_mut_chi_sq.txt")

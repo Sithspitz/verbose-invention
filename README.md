@@ -28,6 +28,7 @@ A few gos and then decided to do the below:
 
 Making a script which analyses all of these, called 'immune_subtype_chi_sq_comparisons.R'.
 
+Using a Chi-Squared test with Fisher's Correction.
 The comparisons in this R file as as follows:
 1: Overview comparing all groups vs one another ('all_data.csv'). 
     Groups: without any MT, with any MT, STK11 MT, KRAS MT, KRAS/STK11 MT
@@ -50,3 +51,9 @@ The comparisons in this R file as as follows:
     Groups: all WT vs KRAS/STK11 double MT.
     COMPARISON SIG.
     
+Decided that as the expected frequencies for the STK11 MT and KRAS/STK11 MT groups are low, that am going to use a Fisher's Test as well to compare these groups and also KRAS MT group vs the WT.
+
+Below are the results of the Fisher's Test for each group:
+3: Without MT vs with STK11 MT ('stk11_mut.csv')
+    FISHER'S COMPARISON
+
